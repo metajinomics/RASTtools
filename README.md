@@ -22,3 +22,9 @@ python RASTdownloadCommad.py inpufile ID password
 ```
 python Fix.py RASTcommand.sh OldList.txt ID password
 ```
+
+## subsystem counter
+```
+javac SubSystemCounter.java
+java SubSystemCounter bindingfile
+```
