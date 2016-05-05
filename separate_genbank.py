@@ -4,7 +4,6 @@
 
 import sys
 def write_file(cont):
-    print cont[0]
     filename = cont[0].split(" ")[7]+".gbk"
     fwrite = open(filename,'w')
     for line in cont:
