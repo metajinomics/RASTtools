@@ -19,7 +19,8 @@ def main():
             cont.append(line)
             write_file(cont)
             cont = []
-        cont.append(line)
+        else:
+            cont.append(line)
 
 if __name__ == '__main__':
     main()
