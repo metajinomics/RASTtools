@@ -38,15 +38,7 @@ python separate_genbank_file.py input
 
 
 ## Download RefSoil RAST
-in Excel, save as refsoil file into refsoil.txt (choose tab deliminated). then change return carrage
+make command
 ```
-tr '\15' '\n' < refsoil.txt > refsoil.unix.txt
-```
-get rast id
-```
-python refsoil_to_rastid.py refsoil.unix.txt > refsoil.rast.id
-```
-then make list
-```
-python RASTdownloadCommad.py refsoil.rast.id ID password
+python RASTdownloadCommad.py RefSoil_RAST_job_id.txt ID password > command.rastdown.sh
 ```
