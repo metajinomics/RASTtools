@@ -10,4 +10,4 @@ for line in fread:
     if(line.strip()[:1]=="["):
         continue
     tempcol = line.strip().split('\t')
-    print "~/sas/bin/svr_retrieve_RAST_job "+id+" "+passwd+" "+tempcol[2]+" rast_tarball > "+tempcol[2]+".tar.gz"
+    print "~/sas/bin/svr_retrieve_RAST_job "+id+" "+passwd+" "+tempcol[0]+" rast_tarball > "+tempcol[2]+".tar.gz"

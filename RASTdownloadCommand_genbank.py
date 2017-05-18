@@ -10,4 +10,4 @@ for line in fread:
     if(line.strip()[:1]=="["):
         continue
     tempcol = line.strip().split('\t')
-    print "~/sas/bin/svr_retrieve_RAST_job "+id+" "+passwd+" "+tempcol[2]+" genbank > "+tempcol[2]+".gbk"
+    print "~/sas/bin/svr_retrieve_RAST_job "+id+" "+passwd+" "+tempcol[0]+" genbank > "+tempcol[2]+".gbk"
