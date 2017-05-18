@@ -5,7 +5,9 @@
 
 import sys
 
-for line in open(sys.argv[1],'r'):
+for n, line in enumerate(open(sys.argv[1],'r')):
+    if n == 0:
+        continue
     spl = line.strip().split('\t')
     rastids = spl[11]
     if rastids.startswith('"') and rastids.endswith('"'):
